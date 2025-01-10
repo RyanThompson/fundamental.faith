@@ -1,0 +1,47 @@
+{
+    "config": {
+        "source": {
+            "type": "self"
+        }
+    },
+    "fields": [
+        {
+            "handle": "id",
+            "type": "string",
+            "required": true,
+            "unique": true,
+            "config": {
+                "min": 2,
+                "max": 3,
+                "example": "00"
+            }
+        },
+        {
+            "handle": "heading",
+            "type": "string",
+            "required": true,
+            "unique": true
+        },
+        {
+            "handle": "description",
+            "type": "string"
+        }
+    ],
+    "data": {
+        "00": {
+            "id": "00",
+            "heading": "Start here",
+            "description": "Welcome. This site is a catalog of ideas about the Christian faith. Click the dot at bottom right to advance, or wander through the catalog ad hoc."
+        },
+        "01": {
+            "id": "01",
+            "heading": "The nature of faith",
+            "description": "Faith is where science cannot prove and logic must be inferred. It is the foundation of all extra-naturalistic belief."
+        },
+        "02": {
+            "id": "02",
+            "heading": "Methodology",
+            "description": "Methodolgoy, not limited by science, includes metaphysics and relies on inferred logic. See faith. Must reconcile with science."
+        }
+    }
+}

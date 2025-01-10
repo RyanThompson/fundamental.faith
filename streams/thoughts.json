@@ -1,0 +1,31 @@
+{
+    "config": {
+        "source": {
+            "type": "filebase",
+            "format": "md"
+        }
+    },
+    "fields": [
+        {
+            "handle": "id",
+            "type": "string",
+            "required": true,
+            "unique": true,
+            "config": {
+                "min": 2,
+                "max": 3,
+                "example": "00"
+            }
+        },
+        {
+            "handle": "heading",
+            "type": "string",
+            "required": true,
+            "unique": true
+        },
+        {
+            "handle": "body",
+            "type": "string"
+        }
+    ]
+}
