@@ -24,12 +24,14 @@
 	<div class="flex flex-col gap-y-2 mt-44 px-8">
 
 		<header class="mb-20">
-			<h1 class="text-5xl font-bold mb-4">{{ $thought->id }}. {{ $thought->heading }}</h1>
-			<p class="text-3xl font-medium max-w-lg">{{ $thought->description }}</p>
+			<h1 class="text-5xl font-bold mb-4">Welcome</h1>
+			<p class="text-3xl font-medium max-w-lg">About me</p>
 		</header>
 
 		<article class="prose prose-lg">
-			{!! $thought->decorate('body')->markdown() !!}
+@markdown
+## About Me
+@endmarkdown
 		</article>
 	</div>
 

@@ -1,0 +1,43 @@
+{
+    "config": {
+        "source": {
+            "type": "filebase",
+            "format": "json"
+        }
+    },
+    "fields": [
+        {
+            "handle": "id",
+            "type": "string",
+            "required": true,
+            "unique": true,
+            "config": {
+                "min": 2,
+                "max": 3,
+                "example": "00"
+            }
+        },
+        {
+            "handle": "label",
+            "type": "string",
+            "required": true,
+            "unique": true
+        },
+        {
+            "handle": "text",
+            "type": "string"
+        },
+        {
+            "handle": "notes",
+            "type": "array"
+        },
+        {
+            "handle": "tags",
+            "type": "array"
+        },
+        {
+            "handle": "hebrew",
+            "type": "string"
+        }
+    ]
+}

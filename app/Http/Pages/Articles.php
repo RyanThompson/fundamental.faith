@@ -6,17 +6,17 @@ use Streams\Ui\Pages\Page;
 use Illuminate\Support\Str;
 use Illuminate\Support\Facades\View;
 
-class Thoughts extends Page
+class Articles extends Page
 {
     protected static string $layout = 'layouts.default';
 
-    protected static string $view = 'thoughts';
+    protected static string $view = 'articles';
 
-    protected static ?string $slug = '/thoughts';
+    protected static ?string $slug = '/articles';
 
     public function mount()
     {
-        $next = entries('thoughts')
+        $next = entries('articles')
             ->orderBy('id', 'asc')
             ->first();
 

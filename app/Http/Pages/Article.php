@@ -7,25 +7,25 @@ use Illuminate\Support\Str;
 use Illuminate\Support\Facades\View;
 use Illuminate\Support\Facades\Request;
 
-class Thought extends Page
+class Article extends Page
 {
     protected static string $layout = 'layouts.default';
 
-    protected static string $view = 'thought';
+    protected static string $view = 'article';
 
-    protected static ?string $slug = '/thought/{slug}/{id}';
+    protected static ?string $slug = '/article/{slug}/{id}';
 
     public function mount()
     {
         $id = Request::route('id');
 
-        $thought = entries('thoughts')
+        $article = entries('articles')
             ->where('id', $id)
             ->first();
 
-        View::share('thought', $thought);
+        View::share('article', $article);
 
-        $next = entries('thoughts')
+        $next = entries('articles')
             ->where('id', '>', $id)
             ->orderBy('id', 'asc')
             ->first();

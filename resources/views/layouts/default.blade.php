@@ -23,20 +23,20 @@
 	<header class="w-full fixed top-0 left-0">
 		<nav class="flex justify-between items-center w-full p-8">
 			<div class="font-bold flex gap-x-12">
-				<a href="/" class="text-xl hover:opacity-60 transition duration-200" class="text-xl hover:opacity-60 transition duration-200">Faith</a>
-				<a href="https://fundamental.company" class="text-xl hover:opacity-60 transition duration-200">Company</a>
+				<a href="/" class="text-xl hover:opacity-60 transition duration-200" class="text-xl hover:opacity-60 transition duration-200">Fundamental Faith</a>
+				{{-- <a href="https://fundamental.company" class="text-xl hover:opacity-60 transition duration-200">Company</a> --}}
 	
 				{{-- Tease, collect email, and point to streams.dev --}}
-				<a href="https://fundamental.dev" class="text-xl hover:opacity-60 transition duration-200">Code</a>
+				{{-- <a href="https://fundamental.dev" class="text-xl hover:opacity-60 transition duration-200">Code</a> --}}
 	
 				{{-- Gifts and giving --}}
 				{{-- <a href="https://fundamental.gratis" class="text-xl hover:opacity-60 transition duration-200">Gifts</a> --}}
 			</div>
 			<div>
-				<a href="/" class="opacity-100 hover:opacity-50 focus:opacity-50 transition-all duration-200">
+				<a href="/about" class="opacity-10 hover:opacity-100 focus:opacity-100 transition-all duration-200">
 					<span class="sr-only">Fundamental Faith</span>
 					<div>
-						<img src="/img/icon.svg" alt="Vision Logo" class="w-16" />
+						<img src="/img/icon.svg" alt="Vision Logo" class="w-20" />
 					</div>
 				</a>
 			</div>
@@ -48,8 +48,9 @@
 	<footer class="w-full fixed bottom-0 left-0">
 		<nav class="flex items-end justify-between w-full p-8">
 			<div class="font-bold flex gap-x-6">
+				<a href="/" class="text-xl" class="text-xl">Scripture</a>
 				<a href="/thoughts" class="text-xl" class="text-xl">Thoughts</a>
-				<a href="/materials" class="text-xl" class="text-xl">Materials</a>
+				<a href="/culture" class="text-xl" class="text-xl">Culture</a>
 			</div>
 			<div x-data="{show: false}" x-on:mouseover="show=true" x-on:mouseleave="show=false">
 				<a href="/{{ $next ?? '00' }}" class="bg-white h-20 min-w-20 rounded-full flex justify-center items-center transition-all duration-200">

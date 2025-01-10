@@ -3,11 +3,13 @@
 use Illuminate\Support\Facades\Route;
 
 Route::get('/', \App\Http\Pages\Home::class)->name('home');
-Route::get('/thoughts', \App\Http\Pages\Thoughts::class)->name('map');
-Route::get('/{slug}/{id}', \App\Http\Pages\Thought::class)->name('thought');
+Route::get('/about', \App\Http\Pages\About::class)->name('about');
+Route::get('/thoughts', \App\Http\Pages\Articles::class)->name('thoughts');
+Route::get('/culture', \App\Http\Pages\Articles::class)->name('culture');
+Route::get('/{slug}/{id}', \App\Http\Pages\Article::class)->name('article');
 
 // Wildcard Route
-Route::get('/{id}', \App\Http\Pages\Map::class)->name('map');
+Route::get('/{id}', \App\Http\Pages\Scripture::class)->name('map');
 
 
 /*
