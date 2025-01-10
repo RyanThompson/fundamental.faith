@@ -13,7 +13,7 @@ class Article extends Page
 
     protected static string $view = 'article';
 
-    protected static ?string $slug = '/article/{slug}/{id}';
+    protected static ?string $slug = '/{slug}/{id}';
 
     public function mount()
     {
@@ -26,12 +26,18 @@ class Article extends Page
         View::share('article', $article);
 
         $next = entries('articles')
-            ->where('id', '>', $id)
-            ->orderBy('id', 'asc')
-            ->first();
+            ->where('id', '>', $id);
+
+        if ($article->category) {
+            $next = $next->where('category', $article->category);
+        }
+            
+        $next = $next->orderBy('id', 'asc')->first();
 
         if ($next) {
-            View::share('next', Str::slug($next->heading) . "/{$next->id}");
+            View::share('next', Str::slug($next->title) . "/{$next->id}");
+        } else {
+            View::share('next', 'thoughts');
         }
     }
 }

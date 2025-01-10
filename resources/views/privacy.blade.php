@@ -32,13 +32,15 @@
 			<div class="mb-8">
 				<a href="{{ $previous }}" class="underline opacity-50 hover:opacity-100 focus:opacity-100 transition-all duration-200">← Back</a>
 			</div>
-			<h1 class="text-5xl font-bold mb-4">{{ $article->id }}. {{ $article->title }}</h1>
-			<p class="text-3xl font-medium max-w-lg">{{ $article->description }}</p>
+			<h1 class="text-5xl font-bold mb-4">Privacy</h1>
+			<p class="text-3xl font-medium max-w-lg">Seriously Private</p>
 		</header>
 
 		<div class="flex justify-between max-w-5xl">
 			<article class="prose">
-				{!! $article->decorate('body')->markdown() !!}
+@markdown
+## Introduction
+@endmarkdown
 			</article>
 			<nav class="flex flex-col gap-y-2">
 				<a href="#introduction" class="text-2xl font-bold opacity-50 hover:opacity-100 focus:opacity-100 transition-all duration-200">Introduction</a>

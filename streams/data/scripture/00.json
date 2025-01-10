@@ -2,6 +2,7 @@
     "label": "Start here",
     "text": "Welcome. This site is a resource for exploring Christian faith through Scripture, theory and culture. Click the dot at bottom right to advance, or explore the catalog yourself.",
     "links": {
-        "/about": null
+        "/about": null,
+        "/privacy": null
     }
 }

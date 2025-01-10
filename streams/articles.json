@@ -18,7 +18,11 @@
             }
         },
         {
-            "handle": "heading",
+            "handle": "category",
+            "type": "string"
+        },
+        {
+            "handle": "title",
             "type": "string",
             "required": true,
             "unique": true

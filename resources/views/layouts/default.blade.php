@@ -50,7 +50,7 @@
 			<div class="font-bold flex gap-x-6">
 				<a href="/" class="text-xl" class="text-xl">Scripture</a>
 				<a href="/thoughts" class="text-xl" class="text-xl">Thoughts</a>
-				<a href="/culture" class="text-xl" class="text-xl">Culture</a>
+				<a href="/explore" class="text-xl" class="text-xl">Explore</a>
 			</div>
 			<div x-data="{show: false}" x-on:mouseover="show=true" x-on:mouseleave="show=false">
 				<a href="/{{ $next ?? '00' }}" class="bg-white h-20 min-w-20 rounded-full flex justify-center items-center transition-all duration-200">
