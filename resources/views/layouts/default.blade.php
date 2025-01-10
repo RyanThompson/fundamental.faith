@@ -54,7 +54,7 @@
 			</div>
 			<div x-data="{show: false}" x-on:mouseover="show=true" x-on:mouseleave="show=false">
 				<a href="/{{ $next ?? '00' }}" class="bg-white h-20 min-w-20 rounded-full flex justify-center items-center transition-all duration-200">
-					<span x-bind:class="show ? 'w-40 opacity-100' : 'w-0 opacity-0'" x-transition class="text-4xl font-black overflow-hidden transition-all text-center text-black">Next</span>
+					<span x-bind:class="show ? 'w-40 opacity-100' : 'w-0 opacity-0'" x-transition class="text-4xl font-black overflow-hidden transition-all text-center text-black">{{ isset($next) ? 'Next' : 'Start' }}</span>
 				</a>
 			</div>
 		</nav>
